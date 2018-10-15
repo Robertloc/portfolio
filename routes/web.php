@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::post('/portfolio', 'PortfolioController@store');
+Route::post('/portfolio', 'PortfolioController@create');
+
+
