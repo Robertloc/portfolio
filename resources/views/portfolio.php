@@ -219,24 +219,24 @@
                 <div class="names">
                     <div class="input-group">
                         <label for="firstname">Firstname*</label>
-                        <input type="text" name="firstname" id="firstname" value="<?= htmlspecialchars($firstname)?>"/>
+                        <input type="text" name="firstname" id="firstname" value="<?= htmlspecialchars($table_contact->firstname)?>"/>
                     </div>
                     <div class="input-group">
                         <label for="lastname">Last name*</label>
-                        <input type="text" name="lastname" id="lastname"value="<?= htmlspecialchars($lastname) ?>"/>
+                        <input type="text" name="lastname" id="lastname"value="<?= htmlspecialchars($table_contact->lastname) ?>"/>
                     </div>
                     <div class="input-group">
                         <label for="email">Email*</label>
-                        <input type="email" name="email" id="email"value="<?= htmlspecialchars($email) ?>"/>
+                        <input type="email" name="email" id="email"value="<?= htmlspecialchars($table_contact->email) ?>"/>
                     </div>
                     <div class="input-group">
                         <label for="phone*">Phone*</label>
-                        <input type="number" name="phone" id="phone"value="<?= htmlspecialchars($phone) ?>"/>
+                        <input type="number" name="phone" id="phone"value="<?= htmlspecialchars($table_contact->phone) ?>"/>
                    </div>
                 </div>
                 <div class="messeage">
                     <div class="ms">My message*</div> 
-                    <textarea rows="10" cols="80" id="message" value="<?= htmlspecialchars($message)?>"></textarea>
+                    <textarea rows="10" cols="80" id="message" value="<?= htmlspecialchars($table_contact->message)?>"></textarea>
                     <input type="submit" name="submit" value="Send my message">
                 </div>
             </form> 
